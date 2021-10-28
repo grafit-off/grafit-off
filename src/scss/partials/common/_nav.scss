@@ -1,0 +1,123 @@
+.nav {
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	display: flex;
+
+	width: auto;
+	height: 100%;
+
+	opacity: 0;
+	visibility: hidden;
+	transform: translateX(-100%);
+
+	transition: transform 0.3s ease, opacity 0.3s ease, visibility 0.3s ease;
+	@media (max-width: $md3+px) {
+		width: 100vw;
+		height: 100vh;
+		transform: translateX(0);
+		transform: translateY(-100%);
+	}
+	&--active {
+		visibility: visible;
+		opacity: 1;
+		transform: translateX(0);
+		transition: transform 0.3s ease, opacity 0.3s ease, visibility 0.3s ease;
+		@media (max-width: $md3+px) {
+			transform: translateY(0);
+		}
+		.nav__overlay {
+			transform: translateX(0);
+			opacity: 0.8;
+
+			transition: opacity 0.3s ease 0.3s;
+		}
+	}
+	&__wrap {
+		width: 100%;
+		height: 100%;
+		padding: 20px 80px 20px 80px;
+
+		background: var(--color-nav-bg) var(--image-nav) bottom center/contain no-repeat;
+		transition: background-color 0.3s ease;
+		@media (max-width: $md3+px) {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			padding: 100px 20px;
+			padding-bottom: 80px;
+			background: var(--color-nav-bg) var(--image-nav) center 80%/400px no-repeat;
+		}
+	}
+	&__overlay {
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: -1;
+		opacity: 0;
+		width: 100vw;
+		height: 100vh;
+		background-color: var(--color-black);
+
+		transform: translateX(-100%);
+		transition: opacity 0.3s ease, transform 0.3s ease 0.4s;
+		cursor: pointer;
+
+		@media (max-width: $md3+px) {
+			display: none;
+		}
+	}
+	&__list {
+		@media (max-width: $md3+px) {
+			text-align: center;
+		}
+	}
+
+	&__item {
+		&:not(:last-child) {
+			margin-bottom: 20px;
+		}
+	}
+
+	&__link {
+		position: relative;
+		font-weight: 700;
+		font-size: 28px;
+		&::after {
+			content: "";
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 0;
+			height: 2px;
+			will-change: width;
+			background-color: currentColor;
+			transition: width 0.3s ease;
+		}
+		&--active {
+			&::after {
+				width: 100%;
+				transition: width 0.3s ease;
+			}
+		}
+		@media (any-hover: hover) {
+			&:hover {
+				&::after {
+					width: 100%;
+					transition: width 0.3s ease;
+				}
+			}
+		}
+		@media (max-width: $md3+px) {
+			font-size: 32px;
+		}
+	}
+	&__social {
+		display: none;
+		@media (max-width: $md3+px) {
+			display: flex;
+			justify-content: center;
+		}
+	}
+}
