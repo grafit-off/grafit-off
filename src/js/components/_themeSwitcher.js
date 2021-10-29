@@ -5,7 +5,7 @@ const initialState = (themeName) => {
 }
 
 if (localStorage.getItem('site-theme') === undefined || localStorage.getItem('site-theme') === null) {
-	initialState('dark-theme');
+	initialState('light-theme');
 } else {
 	initialState(localStorage.getItem('site-theme'));
 }

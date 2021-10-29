@@ -4,6 +4,14 @@
 
 	height: 100%;
 	width: 60px;
+	border-bottom: 1px solid transparent;
+	transition: border-bottom 0.3s ease;
+
+	&--active {
+		background-color: var(--color-bg);
+		border-bottom: 1px solid var(--color-font);
+		transition: border-bottom 0.3s ease;
+	}
 	@media (max-width: $md3+px) {
 		width: 100%;
 		height: auto;
@@ -83,6 +91,9 @@
 			will-change: width;
 			background-color: currentColor;
 			transition: width 0.3s ease;
+		}
+		@media (max-width: $md3+px) {
+			margin-right: 40px;
 		}
 		@media (any-hover: hover) {
 			&:hover {

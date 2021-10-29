@@ -27,6 +27,14 @@
 	line-height: 1;
 
 	transition: color 1s ease;
+	&::-webkit-scrollbar {
+		width: 10px;
+		background-color: var(--color-bg);
+	}
+	&::-webkit-scrollbar-thumb {
+		border-radius: 5px;
+		background-color: var(--color-font);
+	}
 }
 .wrap {
 	width: 100%;

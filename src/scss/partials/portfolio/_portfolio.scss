@@ -1,0 +1,46 @@
+.portfolio {
+	margin-bottom: 80px;
+	&__container {
+		padding-left: 60px;
+		@media (max-width: $md3+px) {
+			padding: 60px 0 0 0;
+		}
+	}
+
+	&__info {
+		padding: 20px 80px;
+
+		border-bottom: 2px solid var(--color-font);
+		@media (max-width: $md2+px) {
+			padding: 20px 20px;
+		}
+	}
+
+	&__heading {
+		margin-bottom: 35px;
+
+		font-size: $fz-heading;
+		font-weight: 700;
+		text-transform: uppercase;
+		@media (max-width: $md3+px) {
+			margin-bottom: 20px;
+			font-size: 32px;
+		}
+	}
+
+	&__descr {
+		font-size: $fz-subtext;
+		font-weight: 700;
+		text-transform: uppercase;
+		@media (max-width: $md3+px) {
+			font-size: 24px;
+		}
+	}
+
+	&__list {
+	}
+
+	&__item {
+		border-bottom: 2px solid var(--color-font);
+	}
+}

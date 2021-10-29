@@ -136,6 +136,17 @@
 	}
 
 	&__list {
+		position: relative;
+		padding-left: 15px;
+		&::before {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 2px;
+			height: 100%;
+			background-color: var(--color-font);
+		}
 	}
 
 	&__item {
