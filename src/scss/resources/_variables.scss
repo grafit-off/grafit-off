@@ -1,11 +1,16 @@
 :root {
+	--color-black: #000;
+	--color-white: #fff;
+
 	--color-bg: #191919;
 	--color-font: #eff259;
 	--color-nav-bg: #191919;
 	--color-back-overlay: #000;
 	--image-nav: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23eff259' width='24' height='24'%3E%3Cpath d='M11 7a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-4h-2v4h-2V9h4V7h-4z'/%3E%3C/svg%3E");
 
-	--color-black: #000;
+	--post-bg: #575757;
+	--post-tag: #f84040;
+	--post-time: #7a7a7a;
 }
 .light-theme {
 	--color-bg: #e5e5e5;

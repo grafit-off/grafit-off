@@ -5,7 +5,7 @@
 
 	display: flex;
 
-	width: auto;
+	width: 500px;
 	height: 100%;
 
 	opacity: 0;
@@ -13,6 +13,9 @@
 	transform: translateX(-100%);
 
 	transition: transform 0.3s ease, opacity 0.3s ease, visibility 0.3s ease;
+	@include maxwidth(1200) {
+		width: auto;
+	}
 	@media (max-width: $md3+px) {
 		width: 100vw;
 		height: 100vh;

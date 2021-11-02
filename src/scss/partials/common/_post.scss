@@ -2,6 +2,7 @@
 	position: relative;
 	display: flex;
 	flex-direction: column;
+
 	&__image {
 		flex: 1 1 auto;
 
@@ -12,7 +13,7 @@
 		padding: 10px;
 		margin-bottom: 15px;
 
-		background-color: #575757;
+		background-color: var(--post-bg);
 	}
 
 	&__svg {
@@ -23,10 +24,10 @@
 	}
 
 	&__time {
-		display: inline-block;
+		display: block;
 		margin-bottom: 10px;
 
-		color: #7a7a7a;
+		color: var(--post-time);
 	}
 
 	&__title {
@@ -40,8 +41,8 @@
 
 		padding: 5px 10px;
 
-		background-color: red;
-		color: #fff;
+		background-color: var(--post-tag);
+		color: var(--color-white);
 	}
 	&__link {
 		position: absolute;
