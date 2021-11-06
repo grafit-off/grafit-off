@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
 		}
 	})
 	window.addEventListener('scroll', () => {
-		if (!header.classList.contains('header--active') && window.innerWidth < 768) {
+		if (!header.classList.contains('header--active') && window.innerWidth < 900) {
 			header.classList.add('header--active')
 		} else if (!window.pageYOffset) {
 			header.classList.remove('header--active');

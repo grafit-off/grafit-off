@@ -1,15 +1,18 @@
 .promo-blog {
-	padding-left: 60px;
-	margin-bottom: 60px;
-	@media (max-width: $md3+px) {
-		padding-left: 0;
-	}
 	&__container {
-		padding: 0 80px;
-		max-width: 1920px;
-		margin: 0 auto;
-		@media (max-width: $md2+px) {
+		margin-bottom: 60px;
+		padding-left: 100px;
+		padding-right: 60px;
+
+		@media (max-width: $md2) {
+			padding-left: 80px;
+			padding-right: 40px;
+		}
+		@include maxwidth(900) {
 			padding: 0 20px;
+		}
+		@media (max-height: $md4) and (max-width: 900px) and (orientation: landscape) {
+			padding: 60px 50px 0 50px;
 		}
 	}
 
@@ -23,7 +26,7 @@
 		font-size: $fz-heading;
 		font-weight: 700;
 		text-transform: uppercase;
-		@media (max-width: $md3+px) {
+		@media (max-width: $md3) {
 			margin-bottom: 20px;
 			font-size: 32px;
 		}
@@ -37,8 +40,8 @@
 		font-size: 24px;
 		font-weight: 700;
 		text-transform: uppercase;
-		@media (max-width: $md3+px) {
-			font-size: 20px;
+		@media (max-width: $md3) {
+			font-size: 18px;
 		}
 	}
 
@@ -50,7 +53,7 @@
 		@include maxwidth(1220) {
 			grid-template-rows: 1fr 1fr 1fr;
 		}
-		@media (max-width: $md3+px) {
+		@media (max-width: $md3) {
 			grid-template-columns: 1fr;
 			grid-template-rows: 1fr;
 		}
@@ -64,7 +67,7 @@
 				grid-column: span 5;
 				grid-row: span 2;
 			}
-			@media (max-width: $md3+px) {
+			@media (max-width: $md3) {
 				grid-column: span 1;
 				grid-row: span 1;
 			}
@@ -76,7 +79,7 @@
 				grid-row: span 1;
 			}
 
-			@media (max-width: $md3+px) {
+			@media (max-width: $md3) {
 				grid-column: span 1;
 				grid-row: span 1;
 			}
@@ -90,7 +93,7 @@
 				grid-row: span 1;
 			}
 
-			@media (max-width: $md3+px) {
+			@media (max-width: $md3) {
 				grid-column: span 1;
 				grid-row: span 1;
 			}

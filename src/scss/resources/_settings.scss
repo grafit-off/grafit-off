@@ -26,7 +26,7 @@
 	font-size: $fz-text;
 	line-height: 1;
 
-	transition: color 1s ease;
+	transition: color 1s ease, background-color 1s ease;
 	&::-webkit-scrollbar {
 		width: 10px;
 		background-color: var(--color-bg);
@@ -40,9 +40,6 @@
 	width: 100%;
 	height: 100%;
 	margin: 0 auto;
-}
-.main-content {
-	overflow: hidden;
 }
 
 .lock {
@@ -61,26 +58,19 @@
 
 .container {
 	max-width: $maxWidthContainer + 30px;
-	padding-left: 15px;
-	padding-right: 15px;
+	padding-left: 20px;
+	padding-right: 20px;
 	margin: 0 auto;
-}
-
-@media (max-width: $md2+px) and (orientation: portrait) {
-	.container {
-		padding-left: 10px;
-		padding-right: 10px;
+	@media (max-width: $md2) {
+		padding: 0;
+	}
+	@media (max-width: $md3) {
+		padding-left: 20px;
+		padding-right: 20px;
 	}
 }
 
-@media (max-width: $md3+px) and (orientation: portrait) {
-	.container {
-		padding-left: 10px;
-		padding-right: 10px;
-	}
-}
-
-@media (max-height: $md4+px) and (max-width: 1023px) and (orientation: landscape) {
+@media (max-height: $md4) and (max-width: 900px) and (orientation: landscape) {
 	.container {
 		padding-left: 50px;
 		padding-right: 50px;

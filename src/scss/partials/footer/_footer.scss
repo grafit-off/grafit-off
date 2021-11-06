@@ -1,14 +1,19 @@
 .footer {
-	padding-left: 60px;
-	@media (max-width: $md3+px) {
-		padding: 0px;
-	}
 	&__container {
-		position: relative;
-		z-index: 1;
+		padding-left: 100px;
+		padding-right: 60px;
 
+		@media (max-width: $md2) {
+			padding: 0 20px;
+		}
+		@include maxwidth(815) {
+			padding: 0 20px;
+		}
+	}
+	&__strong {
 		display: block;
-		padding: 20px 0;
+		padding-top: 20px;
+		padding-bottom: 20px;
 
 		border-top: 2px solid var(--color-font);
 

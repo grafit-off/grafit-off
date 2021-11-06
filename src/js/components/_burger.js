@@ -37,10 +37,6 @@ class Burger {
 		this.list.setAttribute('aria-hidden', true);
 	}
 
-	calculateScrollbar() {
-
-	}
-
 	toggle() {
 		if (this.btn.classList.contains('burger--active')) {
 			this.close();

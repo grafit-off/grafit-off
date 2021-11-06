@@ -16,7 +16,7 @@
 	@include maxwidth(1200) {
 		width: auto;
 	}
-	@media (max-width: $md3+px) {
+	@media (max-width: 900px) {
 		width: 100vw;
 		height: 100vh;
 		transform: translateX(0);
@@ -27,7 +27,7 @@
 		opacity: 1;
 		transform: translateX(0);
 		transition: transform 0.3s ease, opacity 0.3s ease, visibility 0.3s ease;
-		@media (max-width: $md3+px) {
+		@media (max-width: 900px) {
 			transform: translateY(0);
 		}
 		.nav__overlay {
@@ -44,13 +44,21 @@
 
 		background: var(--color-nav-bg) var(--image-nav) bottom center/contain no-repeat;
 		transition: background-color 0.3s ease;
-		@media (max-width: $md3+px) {
+		@media (max-width: 900px) {
 			display: flex;
 			flex-direction: column;
 			justify-content: space-between;
 			padding: 100px 20px;
 			padding-bottom: 80px;
 			background: var(--color-nav-bg) var(--image-nav) center 80%/400px no-repeat;
+		}
+		@media (max-height: 630px) and (max-width: $md4) {
+			background: var(--color-nav-bg) var(--image-nav) center 80%/300px no-repeat;
+		}
+		@media (max-height: $md4) and (max-width: 900px) and (orientation: landscape) {
+			align-items: flex-start;
+			padding: 60px 50px;
+			background: var(--color-nav-bg) var(--image-nav) right center/400px no-repeat;
 		}
 	}
 	&__overlay {
@@ -67,13 +75,18 @@
 		transition: opacity 0.3s ease, transform 0.3s ease 0.4s;
 		cursor: pointer;
 
-		@media (max-width: $md3+px) {
+		@media (max-width: 900px) {
 			display: none;
 		}
 	}
 	&__list {
-		@media (max-width: $md3+px) {
+		margin-bottom: 20px;
+
+		@media (max-width: 900px) {
 			text-align: center;
+		}
+		@media (max-height: $md4) and (max-width: 900px) and (orientation: landscape) {
+			text-align: left;
 		}
 	}
 
@@ -112,13 +125,13 @@
 				}
 			}
 		}
-		@media (max-width: $md3+px) {
+		@media (max-width: 900px) {
 			font-size: 32px;
 		}
 	}
 	&__social {
 		display: none;
-		@media (max-width: $md3+px) {
+		@media (max-width: 900px) {
 			display: flex;
 			justify-content: center;
 		}

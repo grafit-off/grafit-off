@@ -1,20 +1,26 @@
 .portfolio {
-	margin-bottom: 80px;
 	&__container {
-		padding-left: 60px;
-		max-width: 1920px;
-		margin: 0 auto;
-		@media (max-width: $md3+px) {
-			padding: 60px 0 0 0;
+		margin-bottom: 80px;
+		padding: 0 0 0 55px;
+
+		@media (max-width: 900px) {
+			padding: 70px 0 0 0;
+		}
+		@media (max-height: $md4) and (max-width: 900px) and (orientation: landscape) {
+			padding: 60px 50px 0 50px;
 		}
 	}
 
 	&__info {
-		padding: 20px 80px;
+		padding: 20px 45px;
 
 		border-bottom: 2px solid var(--color-font);
-		@media (max-width: $md2+px) {
+		@media (max-width: $md2) {
 			padding: 20px 20px;
+		}
+
+		@media (max-height: $md4) and (max-width: 900px) and (orientation: landscape) {
+			padding: 20px 0;
 		}
 	}
 
@@ -24,7 +30,7 @@
 		font-size: $fz-heading;
 		font-weight: 700;
 		text-transform: uppercase;
-		@media (max-width: $md3+px) {
+		@media (max-width: $md3) {
 			margin-bottom: 20px;
 			font-size: 32px;
 		}
@@ -34,12 +40,9 @@
 		font-size: $fz-subtext;
 		font-weight: 700;
 		text-transform: uppercase;
-		@media (max-width: $md3+px) {
+		@media (max-width: $md3) {
 			font-size: 24px;
 		}
-	}
-
-	&__list {
 	}
 
 	&__item {
