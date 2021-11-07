@@ -31,7 +31,7 @@
 		padding-bottom: 40px;
 
 		border-bottom: 2px solid var(--color-font);
-		@include maxwidth(1100) {
+		@include maxwidth(1200) {
 			flex: 0 0 100%;
 			margin-right: 0;
 			margin-bottom: 40px;
@@ -41,7 +41,7 @@
 	&__aside {
 		flex: 0 0 35%;
 		margin-bottom: 60px;
-		@include maxwidth(1100) {
+		@include maxwidth(1200) {
 			flex: 0 0 100%;
 			margin-bottom: 60px;
 		}
