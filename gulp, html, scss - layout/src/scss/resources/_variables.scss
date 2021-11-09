@@ -1,0 +1,50 @@
+:root {
+	--color-black: #000;
+	--color-white: #fff;
+
+	--color-bg: #191919;
+	--color-font: #eff259;
+	--color-font-article: #eff259;
+	--color-nav-bg: #191919;
+	--color-back-overlay: #000;
+	--image-nav: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23eff259' width='24' height='24'%3E%3Cpath d='M11 7a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-4h-2v4h-2V9h4V7h-4z'/%3E%3C/svg%3E");
+
+	--post-bg: #575757;
+	--post-tag: #f84040;
+	--post-time: #8d97a4;
+}
+.light-theme {
+	--color-bg: #e5e5e5;
+	--color-font: #151515;
+	--color-font-article: #fff;
+	--color-nav-bg: #e5e5e5;
+	--color-back-overlay: #fff;
+	--image-nav: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000000' width='24' height='24'%3E%3Cpath d='M11 7a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-4h-2v4h-2V9h4V7h-4z'/%3E%3C/svg%3E");
+
+	--color-black: #000;
+}
+.dark-theme {
+	--color-bg: #191919;
+	--color-font: #eff259;
+	--color-font-article: #eff259;
+	--color-nav-bg: #191919;
+	--color-back-overlay: #000;
+	--image-nav: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23eff259' width='24' height='24'%3E%3Cpath d='M11 7a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-4h-2v4h-2V9h4V7h-4z'/%3E%3C/svg%3E");
+
+	--color-black: #000;
+}
+
+$fz-text: 18px;
+$fz-heading: 40px;
+$fz-subtext: 28px;
+
+$ff: "FuturaPT", sans-serif;
+
+$minWidth: 320px;
+$maxWidth: 1920px; // Разрешение макета
+$maxWidthContainer: 1920px; // Разрешение контейнера
+
+$md1: $maxWidthContainer + 15px; //desktop
+$md2: 991.98px; // Tablet
+$md3: 767.98px; // Mobile #1
+$md4: 479.98px; // Mobile #2

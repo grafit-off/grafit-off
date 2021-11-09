@@ -1,0 +1,40 @@
+<section class="promo-blog ">
+	<div class="promo-blog__container container">
+		<div class="promo-blog__info">
+			<h2 class="promo-blog__heading text-reset">
+				Переходите ко мне в
+				<a href="/blog/" class="promo-blog__link link-reset">
+					Блог
+				</a>
+			</h2>
+			<p class="promo-blog__descr text-reset">
+				Там я рассказываю о разных интересных фишках, обновлениях и о своей жизни
+			</p>
+		</div>
+		<ul class="promo-blog__grid list-reset">
+			{% for post in collections.blog | reverse %}
+				{% if loop.index0 < 3 %}
+					{% if title !== post.data.title %}
+						<li class="promo-blog__item">
+							<article class="promo-blog__post post">
+								<div class="post__image">
+									<img src="{{ post.data.img}}" alt="Обложка статьи" class="post__img" />	
+								</div>
+								<div class="post__info">
+									<time class="post__time text-reset" datetime="{{ post.data.datetime}}">
+										{{ post.data.time}}
+									</time>
+									<h3 class="post__title text-reset">
+										{{ post.data.title}}
+									</h3>
+								</div>
+								<span class="post__tag">{{ post.data.tag}}</span>
+								<a href="{{post.url}}" class="post__link link-reset" aria-label="Перейти к посту"></a>
+								</article>
+							</li>
+					{% endif %}
+				{% endif %}
+			{% endfor %}
+		</ul>
+	</div>
+</section>

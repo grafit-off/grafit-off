@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ru" class="html">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, viewport-fit=cover, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="format-detection" content='telephone=no' />
+	<meta name="format-detection" content='address=no' />
+	<meta name="theme-color" content='#ffffff' />
+	<!-- Ссылка на сайт -->
+	<meta name="canonical" href="" />
+	<meta name="description" content="{{ title }}" />
+	<meta name="keywords" content="верстка, заказать верстку, сайт, разработка, HTML, CSS" />
+	<meta name="Author" content="Николай Чёрный" />
+	<meta name="Copyright" content="Николай Чёрный" />
+	<meta name="Address" content="Украина, Киев" />
+	<meta property="og:locale" content="ru_RU" />
+	<meta property="og:type" content="article" />
+	<meta property="og:site_name" content="grafit-off" />
+	<meta property="og:title" content="GRAFIT-OFF - {{title}}" />
+	<meta property="og:description" content=" {{title}}" />
+	<meta property="og:image" content="{{img}}" />
+
+	<!-- Favicons -->
+	<link rel="apple-touch-icon" sizes="57x57" href="/assets/resources/favicons/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="/assets/resources/favicons/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/assets/resources/favicons/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="/assets/resources/favicons/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/assets/resources/favicons/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="/assets/resources/favicons/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/assets/resources/favicons/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="/assets/resources/favicons/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/assets/resources/favicons/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="/assets/resources/favicons/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/assets/resources/favicons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="/assets/resources/favicons/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/assets/resources/favicons/favicon-16x16.png">
+	<link rel="manifest" href="/assets/resources/favicons/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="/assets/resources/favicons/ms-icon-144x144.png">
+
+	<link rel="preload" href="/assets/fonts/FuturaPT-Bold.woff2" as="font" type="font/woff2" crossorigin />
+	<link rel="preload" href="/assets/fonts/FuturaPT-Book.woff2" as="font" type="font/woff2" crossorigin />
+	<link rel="preload" href="/assets/fonts/FuturaPT-Medium.woff2" as="font" type="font/woff2" crossorigin />
+
+	<link rel="stylesheet" href="/assets/css/paper.min.css" />
+	<title>GRAFIT-OFF - {{ title }}</title>
+</head>
+
+<body class="body">
+	<div class="wrap">
+		{% include "header.njk" %}
+		<main class="main-content">
+			<section class="paper">
+				<div class="paper__container container">
+					<article class="paper__article article">
+						<div class="article__promo">
+							<div class="article__image">
+								<img src="{{ img }}" alt="Обложка статьи" class="article__img">
+							</div>
+							<div class="article__info">
+								<div class="article__time-info">
+									<svg class="article__time-svg">
+										<use xlink:href="/assets/img/sprite.svg#clock"></use>
+									</svg>
+									<time class="article__time text-reset" datetime="2021-10-29 23:03">
+										{{ time }}
+									</time>
+								</div>
+								<h3 class="article__title text-reset">
+									{{ title }}
+								</h3>
+							</div>
+							<span class="article__tag">
+								{{ tag }}
+							</span>
+						</div>
+						<div class="article__content">
+							{{ content | safe}}
+						</div>
+					</article>
+					<aside class="paper__aside aside">
+						<div class="aside__content">
+							<h2 class="aside__title text-reset">
+								Последние статьи:
+							</h2>
+							<ul class="aside__list list-reset">
+								{% for post in collections.blog | reverse %}
+									{% if loop.index0 < 7 %}
+										{% if title !== post.data.title %}
+												<li class="aside__item aside-item">
+													<div class="aside-item__article">
+														<div class="aside-item__image">
+															<img src="{{post.data.img}}" alt="Обложка статьи" class="aside-item__img">
+														</div>
+														<div class="aside-item__info">
+															<div class="aside-item__time-info">
+																<time class="aside-item__time text-reset" datetime="{{post.data.datetime}}">
+																	{{post.data.time}}
+																</time>
+																<svg class="aside-item__time-svg">
+																	<use xlink:href="/assets/img/sprite.svg#clock"></use>
+																</svg>
+															</div>
+															<h3 class="aside-item__title text-reset">
+																{{post.data.title}}
+															</h3>
+														</div>
+														<span class="aside-item__tag">
+															{{post.data.tag}}
+														</span>
+														<a href="{{post.url}}" class="aside-item__link link-reset" aria-label="Перейти к статье"></a>
+													</div>
+												</li>
+										{% endif %}
+										{% if loop.length < 2 %}
+												<li>
+													Пусто
+												</li>
+											{% endif %}
+									{% endif %}
+								{% endfor %}
+							</ul>
+						</div>
+					</aside>
+					<div class="paper__author author-info">
+						<div class="author-info__image">
+							<svg class="author-info__svg">
+								<use xlink:href="/assets/img/sprite.svg#G-min"></use>
+							</svg>
+						</div>
+						<div class="author-info__content">
+							<h3 class="author-info__heading text-reset">
+								Об авторе
+							</h3>
+							<div class="author-info__name">
+								Николай Чёрный
+							</div>
+							<p class="author-info__text text-reset">
+								Привет! Я верстальщик, который специализируется на создании веб-сайтов разной сложности с использованием
+								семантической и доступной разметки придерживаясь рекомендаций W3C и WAI-ARIA.
+								Имею некоммерческий опыт разработки адаптивно-отзывчивых web-сайтов и готов выполнить ваш заказ в
+								кратчайшие
+								сроки с максимальным качеством!
+							</p>
+							<p class="author-info__text text-reset">
+								Связатья со мной можно по ссылкам соц. сетей в навигации!
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		{% include "footer.njk" %}
+	</div>	
+	<script src="/assets/js/main.js"></script>
+	<script async src="/assets/resources/libs/codepen.js"></script>
+</body>
+
+</html>

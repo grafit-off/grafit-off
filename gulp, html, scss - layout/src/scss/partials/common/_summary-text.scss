@@ -1,0 +1,6 @@
+.summary-text {
+	font-size: 22px;
+	@media (max-width: $md2) {
+		font-size: 18px;
+	}
+}
