@@ -1,6 +1,6 @@
 # GRAFIT-OFF
 
-## Перейти на сайт-визитку
+## Перейти на мой сайт
 [**GRAFIT-OFF**](https://grafit-off.github.io/grafit-off/build) 
 
 ## Обо мне 
