@@ -72,9 +72,26 @@
 		@media (max-width: $md3) {
 			font-size: 28px;
 		}
+		@media (max-width: $md4) {
+			font-size: 22px;
+		}
 	}
 
 	&__content {
+		h2 {
+			margin: 36px 0 28px 0;
+
+			font-size: 38px;
+			font-weight: 700;
+			text-transform: uppercase;
+			@media (max-width: $md3) {
+				font-size: 28px;
+			}
+			@media (max-width: $md4) {
+				font-size: 24px;
+			}
+		}
+
 		h3 {
 			margin: 36px 0 28px 0;
 
@@ -82,7 +99,10 @@
 			font-weight: 700;
 			text-transform: uppercase;
 			@media (max-width: $md3) {
-				font-size: 28px;
+				font-size: 26px;
+			}
+			@media (max-width: $md4) {
+				font-size: 22px;
 			}
 		}
 
@@ -95,6 +115,9 @@
 			@media (max-width: $md3) {
 				font-size: 24px;
 			}
+			@media (max-width: $md4) {
+				font-size: 20px;
+			}
 		}
 
 		h5 {
@@ -105,6 +128,17 @@
 			text-transform: uppercase;
 			@media (max-width: $md3) {
 				font-size: 20px;
+			}
+		}
+
+		h6 {
+			margin: 28px 0 20px 0;
+
+			font-size: 26px;
+			font-weight: 700;
+			text-transform: uppercase;
+			@media (max-width: $md3) {
+				font-size: 18px;
 			}
 		}
 
