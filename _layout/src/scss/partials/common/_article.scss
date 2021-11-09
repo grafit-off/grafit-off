@@ -78,6 +78,46 @@
 	}
 
 	&__content {
+		a {
+			margin: 0;
+			padding: 0;
+
+			outline: 0;
+			border-bottom: 1px solid var(--color-font);
+			color: inherit;
+
+			font-size: 22px;
+			text-decoration: none;
+			transition: border-bottom 0.3s ease;
+
+			&:visited {
+				text-decoration: none;
+			}
+			@include minwidth(992) {
+				&:focus {
+					box-shadow: 0 0 0 3px #8edc44;
+					border-radius: 5px;
+				}
+				&:focus-visible {
+					box-shadow: 0 0 0 3px #8edc44;
+					border-radius: 5px;
+				}
+				&:focus:not(:focus-visible) {
+					box-shadow: none;
+					border-radius: 0;
+				}
+			}
+			@media (any-hover: hover) {
+				&:hover {
+					border-bottom: 1px solid transparent;
+					transition: border-bottom 0.3s ease;
+				}
+			}
+			@media (max-width: $md3) {
+				font-size: 18px;
+			}
+		}
+
 		h2 {
 			margin: 36px 0 28px 0;
 
@@ -196,46 +236,6 @@
 
 		strong {
 			font-weight: 700;
-		}
-
-		a {
-			margin: 0;
-			padding: 0;
-
-			outline: 0;
-			border-bottom: 1px solid var(--color-font);
-			color: inherit;
-
-			font-size: 22px;
-			text-decoration: none;
-			transition: border-bottom 0.3s ease;
-
-			&:visited {
-				text-decoration: none;
-			}
-			@include minwidth(992) {
-				&:focus {
-					box-shadow: 0 0 0 3px #8edc44;
-					border-radius: 5px;
-				}
-				&:focus-visible {
-					box-shadow: 0 0 0 3px #8edc44;
-					border-radius: 5px;
-				}
-				&:focus:not(:focus-visible) {
-					box-shadow: none;
-					border-radius: 0;
-				}
-			}
-			@media (any-hover: hover) {
-				&:hover {
-					border-bottom: 1px solid transparent;
-					transition: border-bottom 0.3s ease;
-				}
-			}
-			@media (max-width: $md3) {
-				font-size: 18px;
-			}
 		}
 
 		img {
