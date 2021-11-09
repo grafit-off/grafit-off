@@ -4,6 +4,7 @@ time: '29 октября 2021'
 datetime: '2021-10-29 23:03'
 img: '/assets/img/blog-post/1.jpg'
 tag: 'Разное'
+link: 'https://grafit-off.github.io/grafit-off/site/blog/post-1/'
 
 ---
 

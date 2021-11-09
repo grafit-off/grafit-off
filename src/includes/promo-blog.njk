@@ -3,7 +3,7 @@
 		<div class="promo-blog__info">
 			<h2 class="promo-blog__heading text-reset">
 				Переходите ко мне в
-				<a href="/blog/" class="promo-blog__link link-reset">
+				<a href="../blog/" class="promo-blog__link link-reset">
 					Блог
 				</a>
 			</h2>
@@ -29,7 +29,7 @@
 									</h3>
 								</div>
 								<span class="post__tag">{{ post.data.tag}}</span>
-								<a href="{{post.url}}" class="post__link link-reset" aria-label="Перейти к посту"></a>
+								<a href="{{post.data.link}}" class="post__link link-reset" aria-label="Перейти к посту"></a>
 								</article>
 							</li>
 					{% endif %}
