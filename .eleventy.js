@@ -8,7 +8,7 @@ module.exports = function (eleventyConfig) {
 		templateFormats: ['html', 'njk', 'md'],
 		dir: {
 			input: 'src',
-			output: '/',
+			output: 'site',
 			includes: 'includes',
 			layouts: 'layouts',
 			data: 'data'
