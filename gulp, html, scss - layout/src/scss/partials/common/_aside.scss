@@ -30,6 +30,9 @@
 			display: flex;
 			flex-wrap: wrap;
 		}
+		li {
+			color: var(--color-font-article);
+		}
 	}
 
 	&__item {
