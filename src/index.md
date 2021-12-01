@@ -31,4 +31,8 @@ projects:
     title: 'Магазин здорового питания для питомцев'
     image: '../assets/img/portfolio/zooov.jpg'
     link: 'https://grafit-off.github.io/Zooov/build/'
+  - shortname: 'LEASPIN'
+    title: 'Развитие команды для прогрессивного бизнеса'
+    image: '../assets/img/portfolio/LEASPIN.jpg'
+    link: 'https://grafit-off.github.io/ieanspin/build/'
 ---
