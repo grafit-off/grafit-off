@@ -1,4 +1,4 @@
-# GRAFIT-OFF
+# GRAFIT-OFF - Портфолио верстальщика
 
 ## Перейти на мой сайт
 [**GRAFIT-OFF**](https://grafit-off.github.io/grafit-off/site) 
