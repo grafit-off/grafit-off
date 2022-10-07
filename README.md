@@ -1,20 +1,17 @@
-# GRAFIT-OFF - Портфолио верстальщика
+# Mykola Chornyi - Front-End Developer
 
-## Перейти на мой сайт
-[**GRAFIT-OFF**](https://grafit-off.github.io/grafit-off/site) 
+## Visit my web-site
+[**Open site**](https://grafit-off.github.io/grafit-off/site) 
 
-## Обо мне 
+## Summary 
 
-### Черный Николай
+Hi! I'm a Front-End Developer, strive to constantly improve myself, and create flexible, fast and semantic websites with great looks. I love to learn, and my experience has taught me only one thing, practice is the place you learn the most. All my projects gave me immense pleasure of learning. I am well-versed in creating SPA using React, Redux and TypeScript. Have experience in writing flexible and adaptive websites. My markup is semantic and accessible to people with disabilities. To achieve greater productivity, I use Gulp and Webpack bundlers, also have experience in writing and customizing my own builds.
 
-Я верстальщик, который специализируется на создании веб-сайтов разной сложности с использованием семантической и доступной разметки придерживаясь рекомендаций W3C и WAI-ARIA.
-
-Имею некоммерческий опыт разработки адаптивно-отзывчивых web-сайтов с использованием таких технологий:
-* HTML5, CSS3;
-* SCSS (var, nesting, partials, mixins, extend/inheritance); 
-* базовые знания JavaScript, библиотеки Swiper, SimpleBar, Parallax, Inert, Axios;
-* начальные знания React, Redux (subscribe, dispatch, actions, reducers, redux-thunks ), react-redux, react-router-dom, axios, reselect, Rest API, formik, redux-form, useState, useEffect;
-* БЭМ, БЭМ - naming, CSS БЭМ;
-* использую сборщик GULP, есть опыт в написании своей сборки;
-* знаком с версткой методом Pixel Perfect;
-* в своей верстке использую SVG-графику, SVG Sprites.
+Skills
+* HTML5, CSS3, ARIA
+* SCSS (var, nesting, partials, mixins, extend/inheritance)
+* JavaScript, TypeScript
+* React, Redux (subscribe, dispatch, actions, reducers, redux-thunks), axios, reselect, Rest API, formik, redux-form, hooks
+* BEM, Pixel Perfect
+* GULP, Webpack
+* Figma, Avocode, Photoshop, SVG, SVG Sprites
