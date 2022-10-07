@@ -1,27 +1,25 @@
 ---
-title: 'Сайт в продакшн!'
-time: '9 ноября 2021'
-datetime: '2021-11-09 14:00'
+title: 'Site in production!'
+time: 'June 9, 2022'
+datetime: '2022-06-09 14:00'
 img: 'https://grafit-off.github.io/grafit-off/site/assets/img/blog-post/1.jpg'
-tag: 'Разное'
+tag: 'Sundry'
 link: 'https://grafit-off.github.io/grafit-off/site/blog/post-1/'
 codepen: false
 ---
 
-## Приступим!
+## Let's get started!
 
-Первый пост с использованием **Eleventy.js** + **njk**! При разработке сайта нашел некое количество косяков в верстке, но их было довольно мало, что все-таки радует. 
+First post using **Eleventy.js** + **njk**! When developing the site, I found a certain number of jambs in the layout, but there were quite a few of them, which is still pleasing.
 
-Верстка сайта заняла большее время, чем ожидалось, а все потому что небыло дизайна и приходилось все выдумывать налету. Разбираться с редакторами для создания макета охоты не было... Так что, грубо говоря, дизайн я делал с помощью HTML + SCSS и сугубо на свой взгяд. Тем не менее, получилось довольно неплохо!
+Writing markup of the site took longer than expected, and all, because there was no design and everything, had to be invented on the fly. Roughly speaking, I did the design using HTML + SCSS and purely in my opinion. However, it turned out pretty well!
 
-"Насадка" (если так можно сказать, в случае использования eleventy.js + njk) была довольно быстрой и простой. В особенности понравилась производительность сайта, не нужно обращаться к базе данных на сервер как в обычных CMS, думаю это является основным плюсом всех генераторов статики.
+The "boarding" (if I may say so, in the case of using eleventy.js + njk) was pretty quick and simple. I especially liked the performance of the site, there is no need to access the database on the server as in conventional CMS, I think this is the main advantage of all static generators.
 
-Основной проблемой при переносе сайта на GitHub Pages были пути, как бы не казалось странно... Вся проблема заключалась в том, что пути я писал абслолютные... В итоге, мне пришлось проходится по всем файлам и переписывать пути на относительные (слава Богам, что в VS Code это можно сделать довольно бытро). Проблемы бы не было, если бы я просто захостил сайт на свой хостинг, но я все таки решил оставить его на GitHub'е, хотя, вероятней всего, в скором времени перенесу его.
 
-По итогу:
-- две недели разработки дизайна + верстки;
-- три дня "натяжки" на eleventy с использованием nunjucks;
-- пару часов на хостинг.
+As a result:
+- two weeks of design & layout development;
+- three days "boarding" on eleventy using nunjucks;
 
-И вот оно, сайт работает и готов пополнятся новыми статьями и работами для портфолио!
+And here it is, the site is working and ready to be replenished with new articles and works for the portfolio!
 
