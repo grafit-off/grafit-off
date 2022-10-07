@@ -1,227 +1,282 @@
 <!DOCTYPE html>
-<html lang="ru" class="html">
-
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, viewport-fit=cover, initial-scale=1.0" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="format-detection" content='telephone=no' />
-	<meta name="format-detection" content='address=no' />
-	<meta name="theme-color" content='#ffffff' />
-	<!-- Ссылка на сайт -->
-	<meta name="description" content="Заказ адаптивно-отзывчивой, валидной, семантической верстки. Качественно и быстро!" />
-	<meta name="keywords" content="верстка, заказать верстку, сайт, разработка, HTML, CSS" />
-	<meta name="Author" content="Николай Чёрный" />
-	<meta name="Copyright" content="Николай Чёрный" />
-	<meta name="Address" content="Украина, Киев" />
-	<meta property="og:locale" content="ru_RU" />
-	<meta property="og:type" content="article" />
-	<meta property="og:site_name" content="grafit-off" />
-	<meta property="og:title" content="GRAFIT-OFF - адаптивная верстка сайтов, заказать верстку" />
-	<meta property="og:description" content="Заказ адаптивно-отзывчивой, валидной, семантической верстки. Качественно и быстро!" />
-	<meta property="og:image" content="assets/img/cyber-notebook.jpg" />
-
-	<!-- Favicons -->
-	<link rel="apple-touch-icon" sizes="57x57" href="assets/resources/favicons/apple-icon-57x57.png">
-	<link rel="apple-touch-icon" sizes="60x60" href="assets/resources/favicons/apple-icon-60x60.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="assets/resources/favicons/apple-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="76x76" href="assets/resources/favicons/apple-icon-76x76.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="assets/resources/favicons/apple-icon-114x114.png">
-	<link rel="apple-touch-icon" sizes="120x120" href="assets/resources/favicons/apple-icon-120x120.png">
-	<link rel="apple-touch-icon" sizes="144x144" href="assets/resources/favicons/apple-icon-144x144.png">
-	<link rel="apple-touch-icon" sizes="152x152" href="assets/resources/favicons/apple-icon-152x152.png">
-	<link rel="apple-touch-icon" sizes="180x180" href="assets/resources/favicons/apple-icon-180x180.png">
-	<link rel="icon" type="image/png" sizes="192x192" href="assets/resources/favicons/android-icon-192x192.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="assets/resources/favicons/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="96x96" href="assets/resources/favicons/favicon-96x96.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="assets/resources/favicons/favicon-16x16.png">
-	<link rel="manifest" href="assets/resources/favicons/manifest.json">
-	<meta name="msapplication-TileColor" content="#ffffff">
-	<meta name="msapplication-TileImage" content="assets/resources/favicons/ms-icon-144x144.png">
-
-	<link rel="preload" href="assets/fonts/FuturaPT-Bold.woff2" as="font" type="font/woff2" crossorigin />
-	<link rel="preload" href="assets/fonts/FuturaPT-Book.woff2" as="font" type="font/woff2" crossorigin />
-	<link rel="preload" href="assets/fonts/FuturaPT-Medium.woff2" as="font" type="font/woff2" crossorigin />
-
-	<link rel="stylesheet" href="assets/css/main.min.css" />
-	<title>GRAFIT-OFF - адаптивная верстка сайтов, заказать верстку.</title>
-
-</head>
-
-<body class="body">
-	<div class="wrap">
-	<header class="header fixed-padding" id="header">
-		<div class="header__container container">
-			<a href="https://github.com/grafit-off" target="_blank" rel="noopener noreferrer"
-				class="header__github link-reset">
-				<span>g</span>
-				<span>i</span>
-				<span>t</span>
-				<span>h</span>
-				<span>u</span>
-				<span>b</span>
-			</a>
-			<button class="header__burger burger btn-reset" title="Навигационное меню" aria-label="Открыть меню">
-				<span class="burger__line"></span>
-			</button>
-			<nav class="header__nav nav">
-				<div class="nav__wrap">
-					<ul class="nav__list list-reset">
-						<li class="nav__item"><a href="https://grafit-off.github.io/grafit-off/site/" class="nav__link nav__link--active link-reset">Главная</a></li>
-						<li class="nav__item"><a href="https://grafit-off.github.io/grafit-off/site/portfolio/" class="nav__link  link-reset">Портфолио</a></li>
-						<li class="nav__item"><a href="https://grafit-off.github.io/grafit-off/site/summary/" class="nav__link  link-reset">Резюме</a></li>
-						<li class="nav__item"><a href="https://grafit-off.github.io/grafit-off/site/blog/" class="nav__link  link-reset">Блог</a></li>
-					</ul>
-					<ul class="nav__social social list-reset">
-						<li class="social__item">
-							<a href="tg://resolve?domain=ncl_ch" class="social__link link-reset" title="Телеграмм"
-								aria-label="Перейти в телеграмм" target="_blank" rel="noopener noreferrer">
-								<svg class="social__svg social__svg--tg">
-									<use xlink:href="https://grafit-off.github.io/grafit-off/site/assets/img/sprite.svg#tg-min"></use>
-								</svg>
-							</a>
-						</li>
-						<li class="social__item">
-							<a href="https://instagram.com/ncl_ch" class="social__link link-reset" title="Инстаграм"
-								aria-label="Перейти в инстаграм" target="_blank" rel="noopener noreferrer">
-								<svg class="social__svg">
-									<use xlink:href="https://grafit-off.github.io/grafit-off/site/assets/img/sprite.svg#inst-min"></use>
-								</svg>
-							</a>
-						</li>
-						<li class="social__item">
-							<a href="viber://add?number=380981078738" class="social__link link-reset" title="Вайбер"
-								aria-label="Перейти в вайбер" target="_blank" rel="noopener noreferrer">
-								<svg class="social__svg">
-									<use xlink:href="https://grafit-off.github.io/grafit-off/site/assets/img/sprite.svg#viber-min"></use>
-								</svg>
-							</a>
-						</li>
-					</ul>
-				</div>
-				<span class="nav__overlay" title="Закрыть меню"></span>
-			</nav>
-			<div class="header__block">
-				<ul class="header__social social list-reset">
-					<li class="social__item">
-						<a href="tg://resolve?domain=ncl_ch" class="social__link link-reset" title="Телеграмм"
-							aria-label="Перейти в телеграмм" target="_blank" rel="noopener noreferrer">
-							<svg class="social__svg social__svg--tg">
-								<use xlink:href="https://grafit-off.github.io/grafit-off/site/assets/img/sprite.svg#tg-min"></use>
-							</svg>
-						</a>
-					</li>
-					<li class="social__item">
-						<a href="https://instagram.com/ncl_ch" class="social__link link-reset" title="Инстаграм"
-							aria-label="Перейти в инстаграм" target="_blank" rel="noopener noreferrer">
-							<svg class="social__svg">
-								<use xlink:href="https://grafit-off.github.io/grafit-off/site/assets/img/sprite.svg#inst-min"></use>
-							</svg>
-						</a>
-					</li>
-					<li class="social__item">
-						<a href="viber://add?number=380981078738" class="social__link link-reset" title="Вайбер"
-							aria-label="Перейти в вайбер" target="_blank" rel="noopener noreferrer">
-							<svg class="social__svg">
-								<use xlink:href="https://grafit-off.github.io/grafit-off/site/assets/img/sprite.svg#viber-min"></use>
-							</svg>
-						</a>
-					</li>
-				</ul>
-				<button class="header__theme-switcher btn-reset" type="button" title="Изменить тему оформления"
-					aria-label="Изменить тему оформления">
-					<svg>
-						<use xlink:href="https://grafit-off.github.io/grafit-off/site/assets/img/sprite.svg#theme-switcher"></use>
-					</svg>
-				</button>
-			</div>
-		</div>
+<html lang="en" class="html">
+  <head>
+    <meta charset="UTF-8">
+<meta
+    name="viewport"
+    content="width=device-width, viewport-fit=cover, initial-scale=1.0"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="format-detection" content='telephone=no'/>
+<meta name="format-detection" content='address=no'/>
+<meta name="theme-color" content='#ffffff'/>
+<meta
+      name="description"
+      content="Hi! I am Frontend developer with more than a year of practice in the
+        development of SPA using React, Redux, TypeScript and Webpack."/>
+<meta name="keywords" content="web, front-end, css, html, js"/>
+<meta name="Author" content="Mykola Chornyi"/>
+<meta name="Copyright" content="Mykola Chornyi"/>
+<meta name="Address" content="Ukraine, Kyiv"/>
+<meta property="og:locale" content="ru_RU"/>
+<meta property="og:type" content="article"/>
+<meta property="og:site_name" content="grafit-off"/>
+<meta property="og:title" content="Mykola Chornyi - Frontend Developer"/>
+<meta
+      property="og:description"
+      content="I am Frontend developer with more than a year of practice in the
+        development of SPA using React, Redux, TypeScript and Webpack."/> <meta property="og:image" content="assets/img/cyber-notebook.jpg"/>
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="assets/resources/favicons/apple-icon-57x57.png">
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="assets/resources/favicons/apple-icon-60x60.png">
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="assets/resources/favicons/apple-icon-72x72.png">
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="assets/resources/favicons/apple-icon-76x76.png">
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="assets/resources/favicons/apple-icon-114x114.png">
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="assets/resources/favicons/apple-icon-120x120.png">
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="assets/resources/favicons/apple-icon-144x144.png">
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="assets/resources/favicons/apple-icon-152x152.png">
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/resources/favicons/apple-icon-180x180.png">
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="assets/resources/favicons/android-icon-192x192.png">
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/resources/favicons/favicon-32x32.png">
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="assets/resources/favicons/favicon-96x96.png">
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/resources/favicons/favicon-16x16.png">
+    <link rel="manifest" href="assets/resources/favicons/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta
+      name="msapplication-TileImage"
+      content="assets/resources/favicons/ms-icon-144x144.png">
+    <link
+      rel="preload"
+      href="assets/fonts/FuturaPT-Bold.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin/>
+    <link
+      rel="preload"
+      href="assets/fonts/FuturaPT-Book.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin/>
+    <link
+      rel="preload"
+      href="assets/fonts/FuturaPT-Medium.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin/>
+    <link rel="stylesheet" href="assets/css/main.min.css"/>
+    <title>Mykola Chornyi - Frontend Developer</title>
+  </head>
+  <body class="body">
+    <div class="wrap">
+      <header class="header fixed-padding" id="header">
+  <div class="header__container container">
+    <a
+      href="https://github.com/grafit-off"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="header__github link-reset">
+      <span>g</span>
+      <span>i</span>
+      <span>t</span>
+      <span>h</span>
+      <span>u</span>
+      <span>b</span>
+    </a>
+    <button
+      class="header__burger burger btn-reset"
+      title="Navigation list"
+      aria-label="Open">
+      <span class="burger__line"></span>
+    </button>
+    <nav class="header__nav nav">
+      <div class="nav__wrap">
+        <ul class="nav__list list-reset">
+          <li class="nav__item">
+            <a
+              href="https://grafit-off.github.io/grafit-off/site/"
+              class="nav__link nav__link--active link-reset">Home</a>
+          </li>
+          <li class="nav__item">
+            <a
+              href="https://grafit-off.github.io/grafit-off/site/portfolio/"
+              class="nav__link  link-reset">Portfolio</a>
+          </li>
+          <li class="nav__item">
+            <a
+              href="https://grafit-off.github.io/grafit-off/site/summary/"
+              class="nav__link  link-reset">CV</a>
+          </li>
+          
+        </ul>
+        <ul class="nav__social social list-reset">
+          <li class="social__item">
+            <a
+              href="tg://resolve?domain=ncl_ch"
+              class="social__link link-reset"
+              title="Telegram"
+              aria-label="Visit telegram"
+              target="_blank"
+              rel="noopener noreferrer">
+              <svg class="social__svg social__svg--tg">
+                <use xlink:href="https://grafit-off.github.io/grafit-off/site/assets/img/sprite.svg#tg-min"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a
+              href="viber://add?number=380981078738"
+              class="social__link link-reset"
+              title="Viber"
+              aria-label="Open viber"
+              target="_blank"
+              rel="noopener noreferrer">
+              <svg class="social__svg">
+                <use xlink:href="https://grafit-off.github.io/grafit-off/site/assets/img/sprite.svg#viber-min"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <span class="nav__overlay" title="Close navigation list"></span>
+    </nav>
+    <div class="header__block">
+      <ul class="header__social social list-reset">
+        <li class="social__item">
+          <a
+            href="tg://resolve?domain=ncl_ch"
+            class="social__link link-reset"
+            title="Telegram"
+            aria-label="Visit telegram"
+            target="_blank"
+            rel="noopener noreferrer">
+            <svg class="social__svg social__svg--tg">
+              <use xlink:href="https://grafit-off.github.io/grafit-off/site/assets/img/sprite.svg#tg-min"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social__item">
+          <a
+            href="viber://add?number=380981078738"
+            class="social__link link-reset"
+            title="Viber"
+            aria-label="Open viber"
+            target="_blank"
+            rel="noopener noreferrer">
+            <svg class="social__svg">
+              <use xlink:href="https://grafit-off.github.io/grafit-off/site/assets/img/sprite.svg#viber-min"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+      <button
+        class="header__theme-switcher btn-reset"
+        type="button"
+        title="Change theme"
+        aria-label="Change theme">
+        <svg>
+          <use xlink:href="https://grafit-off.github.io/grafit-off/site/assets/img/sprite.svg#theme-switcher"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
 </header>
-
-		<main class="main-content">
-			<section class="hero" id="hero">
-				<div class="hero__container container">
-					<strong class="hero__strong text-reset">
-						Веб-разработчик
-					</strong>
-					<div class="hero__columns">
-						<div class="hero__name">
-							Чёрный Николай
-						</div>
-						<a href="portfolio/" class="hero__portfolio link-reset">
-							портфолио
-							<svg class="hero__arrow">
-								<use xlink:href="assets/img/sprite.svg#arrow"></use>
-							</svg>
-						</a>
-					</div>
-					<h1 class="hero__heading text-reset">Создание веб-сайтов разной сложности с использованием семантической и
-						доступной разметки, придерживаясь рекомендаций W3C и WAI-ARIA</h1>
-					<div class="hero__row">
-						<h2 class="hero__subheading text-reset">Последние работы</h2>
-						<ul class="hero__list list-reset">
-						
-							
-								
-									
-										<li class="hero__item">
-											<a href="https://grafit-off.github.io/ieanspin/build/" class="hero__link link-reset" target="_blank"
-												rel="noopener noreferrer">Развитие команды для прогрессивного бизнеса</a>
-										</li>
-									
-								
-							
-								
-									
-										<li class="hero__item">
-											<a href="https://grafit-off.github.io/Zooov/build/" class="hero__link link-reset" target="_blank"
-												rel="noopener noreferrer">Магазин здорового питания для питомцев</a>
-										</li>
-									
-								
-							
-								
-									
-										<li class="hero__item">
-											<a href="https://grafit-off.github.io/streetster/" class="hero__link link-reset" target="_blank"
-												rel="noopener noreferrer">Магазин спортивных велосипедов</a>
-										</li>
-									
-								
-							
-								
-									
-										<li class="hero__item">
-											<a href="https://grafit-off.github.io/makeface/" class="hero__link link-reset" target="_blank"
-												rel="noopener noreferrer">Интенсив по наращиванию ресниц</a>
-										</li>
-									
-								
-							
-								
-									
-										<li class="hero__item">
-											<a href="https://grafit-off.github.io/Dream-Car/build/" class="hero__link link-reset" target="_blank"
-												rel="noopener noreferrer">Магазин ковриков для авто</a>
-										</li>
-									
-								
-							
-								
-							
-								
-							
-								
-							
-							
-						</ul>
-					</div>
-				</div>
-			</section>
-		</main>
-	</div>
-
-	<script src="assets/js/main.js"></script>
-</body>
-
+      <main class="main-content">
+        <section class="hero" id="hero">
+          <div class="hero__container container">
+            <strong class="hero__strong text-reset">
+              Frontend Developer
+            </strong>
+            <div class="hero__columns">
+              <div class="hero__name">
+                Mykola Chornyi
+              </div>
+              <a href="portfolio/" class="hero__portfolio link-reset">
+                portfolio
+                <svg class="hero__arrow">
+                  <use xlink:href="assets/img/sprite.svg#arrow"></use>
+                </svg>
+              </a>
+            </div>
+            <h1 class="hero__heading text-reset">
+              I am Frontend developer with more than a year of practice in the development of
+              SPA using React, Redux, TypeScript and Webpack. I love to learn, and my
+              experience has taught me only one thing, work is the place you learn the most.
+            </h1>
+            <div class="hero__row">
+              <h2 class="hero__subheading text-reset">Latest projects</h2>
+              <ul class="hero__list list-reset">
+                
+                  
+                    
+                      <li class="hero__item">
+                        <a href="https://grafit-off.github.io/ieanspin/build/" class="hero__link link-reset" target="_blank" rel="noopener noreferrer">LEASPIN - Team development for progressive business</a>
+                      </li>
+                    
+                  
+                
+                  
+                    
+                      <li class="hero__item">
+                        <a href="https://grafit-off.github.io/Zooov/build/" class="hero__link link-reset" target="_blank" rel="noopener noreferrer">Zooov - Pet Health Food Store</a>
+                      </li>
+                    
+                  
+                
+                  
+                    
+                      <li class="hero__item">
+                        <a href="https://grafit-off.github.io/streetster/" class="hero__link link-reset" target="_blank" rel="noopener noreferrer">Streetster - Online cycle shop</a>
+                      </li>
+                    
+                  
+                
+              </ul>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>

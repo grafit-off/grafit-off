@@ -1,168 +1,253 @@
 <!DOCTYPE html>
-<html lang="ru" class="html">
-
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, viewport-fit=cover, initial-scale=1.0" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="format-detection" content='telephone=no' />
-	<meta name="format-detection" content='address=no' />
-	<meta name="theme-color" content='#ffffff' />
-	<!-- Ссылка на сайт -->
-	<meta name="description" content="Изображения и иконки" />
-	<meta name="keywords" content="верстка, заказать верстку, сайт, разработка, HTML, CSS" />
-	<meta name="Author" content="Николай Чёрный" />
-	<meta name="Copyright" content="Николай Чёрный" />
-	<meta name="Address" content="Украина, Киев" />
-	<meta property="og:locale" content="ru_RU" />
-	<meta property="og:type" content="article" />
-	<meta property="og:site_name" content="grafit-off" />
-	<meta property="og:title" content="GRAFIT-OFF - Изображения и иконки" />
-	<meta property="og:description" content=" Изображения и иконки" />
-	<meta property="og:image" content="https://grafit-off.github.io/grafit-off/site/assets/img/blog-post/3.jpg" />
-
-	<!-- Favicons -->
-	<link rel="apple-touch-icon" sizes="57x57" href="../../assets/resources/favicons/apple-icon-57x57.png">
-	<link rel="apple-touch-icon" sizes="60x60" href="../../assets/resources/favicons/apple-icon-60x60.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="../../assets/resources/favicons/apple-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="76x76" href="../../assets/resources/favicons/apple-icon-76x76.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="../../assets/resources/favicons/apple-icon-114x114.png">
-	<link rel="apple-touch-icon" sizes="120x120" href="../../assets/resources/favicons/apple-icon-120x120.png">
-	<link rel="apple-touch-icon" sizes="144x144" href="../../assets/resources/favicons/apple-icon-144x144.png">
-	<link rel="apple-touch-icon" sizes="152x152" href="../../assets/resources/favicons/apple-icon-152x152.png">
-	<link rel="apple-touch-icon" sizes="180x180" href="../../assets/resources/favicons/apple-icon-180x180.png">
-	<link rel="icon" type="image/png" sizes="192x192" href="../../assets/resources/favicons/android-icon-192x192.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="../../assets/resources/favicons/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="96x96" href="../../assets/resources/favicons/favicon-96x96.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="../../assets/resources/favicons/favicon-16x16.png">
-	<link rel="manifest" href="../../assets/resources/favicons/manifest.json">
-	<meta name="msapplication-TileColor" content="#ffffff">
-	<meta name="msapplication-TileImage" content="../../assets/resources/favicons/ms-icon-144x144.png">
-
-	<link rel="preload" href="../../assets/fonts/FuturaPT-Bold.woff2" as="font" type="font/woff2" crossorigin />
-	<link rel="preload" href="../../assets/fonts/FuturaPT-Book.woff2" as="font" type="font/woff2" crossorigin />
-	<link rel="preload" href="../../assets/fonts/FuturaPT-Medium.woff2" as="font" type="font/woff2" crossorigin />
-
-	<link rel="stylesheet" href="../../assets/css/paper.min.css" />
-	<title>GRAFIT-OFF - Изображения и иконки</title>
-</head>
-
-<body class="body">
-	<div class="wrap">
-		<header class="header fixed-padding" id="header">
-		<div class="header__container container">
-			<a href="https://github.com/grafit-off" target="_blank" rel="noopener noreferrer"
-				class="header__github link-reset">
-				<span>g</span>
-				<span>i</span>
-				<span>t</span>
-				<span>h</span>
-				<span>u</span>
-				<span>b</span>
-			</a>
-			<button class="header__burger burger btn-reset" title="Навигационное меню" aria-label="Открыть меню">
-				<span class="burger__line"></span>
-			</button>
-			<nav class="header__nav nav">
-				<div class="nav__wrap">
-					<ul class="nav__list list-reset">
-						<li class="nav__item"><a href="https://grafit-off.github.io/grafit-off/site/" class="nav__link  link-reset">Главная</a></li>
-						<li class="nav__item"><a href="https://grafit-off.github.io/grafit-off/site/portfolio/" class="nav__link  link-reset">Портфолио</a></li>
-						<li class="nav__item"><a href="https://grafit-off.github.io/grafit-off/site/summary/" class="nav__link  link-reset">Резюме</a></li>
-						<li class="nav__item"><a href="https://grafit-off.github.io/grafit-off/site/blog/" class="nav__link nav__link--active link-reset">Блог</a></li>
-					</ul>
-					<ul class="nav__social social list-reset">
-						<li class="social__item">
-							<a href="tg://resolve?domain=ncl_ch" class="social__link link-reset" title="Телеграмм"
-								aria-label="Перейти в телеграмм" target="_blank" rel="noopener noreferrer">
-								<svg class="social__svg social__svg--tg">
-									<use xlink:href="https://grafit-off.github.io/grafit-off/site/assets/img/sprite.svg#tg-min"></use>
-								</svg>
-							</a>
-						</li>
-						<li class="social__item">
-							<a href="https://instagram.com/ncl_ch" class="social__link link-reset" title="Инстаграм"
-								aria-label="Перейти в инстаграм" target="_blank" rel="noopener noreferrer">
-								<svg class="social__svg">
-									<use xlink:href="https://grafit-off.github.io/grafit-off/site/assets/img/sprite.svg#inst-min"></use>
-								</svg>
-							</a>
-						</li>
-						<li class="social__item">
-							<a href="viber://add?number=380981078738" class="social__link link-reset" title="Вайбер"
-								aria-label="Перейти в вайбер" target="_blank" rel="noopener noreferrer">
-								<svg class="social__svg">
-									<use xlink:href="https://grafit-off.github.io/grafit-off/site/assets/img/sprite.svg#viber-min"></use>
-								</svg>
-							</a>
-						</li>
-					</ul>
-				</div>
-				<span class="nav__overlay" title="Закрыть меню"></span>
-			</nav>
-			<div class="header__block">
-				<ul class="header__social social list-reset">
-					<li class="social__item">
-						<a href="tg://resolve?domain=ncl_ch" class="social__link link-reset" title="Телеграмм"
-							aria-label="Перейти в телеграмм" target="_blank" rel="noopener noreferrer">
-							<svg class="social__svg social__svg--tg">
-								<use xlink:href="https://grafit-off.github.io/grafit-off/site/assets/img/sprite.svg#tg-min"></use>
-							</svg>
-						</a>
-					</li>
-					<li class="social__item">
-						<a href="https://instagram.com/ncl_ch" class="social__link link-reset" title="Инстаграм"
-							aria-label="Перейти в инстаграм" target="_blank" rel="noopener noreferrer">
-							<svg class="social__svg">
-								<use xlink:href="https://grafit-off.github.io/grafit-off/site/assets/img/sprite.svg#inst-min"></use>
-							</svg>
-						</a>
-					</li>
-					<li class="social__item">
-						<a href="viber://add?number=380981078738" class="social__link link-reset" title="Вайбер"
-							aria-label="Перейти в вайбер" target="_blank" rel="noopener noreferrer">
-							<svg class="social__svg">
-								<use xlink:href="https://grafit-off.github.io/grafit-off/site/assets/img/sprite.svg#viber-min"></use>
-							</svg>
-						</a>
-					</li>
-				</ul>
-				<button class="header__theme-switcher btn-reset" type="button" title="Изменить тему оформления"
-					aria-label="Изменить тему оформления">
-					<svg>
-						<use xlink:href="https://grafit-off.github.io/grafit-off/site/assets/img/sprite.svg#theme-switcher"></use>
-					</svg>
-				</button>
-			</div>
-		</div>
+<html lang="en" class="html">
+  <head>
+    <meta charset="UTF-8">
+    <meta
+      name="viewport"
+      content="width=device-width, viewport-fit=cover, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content='telephone=no'/>
+    <meta name="format-detection" content='address=no'/>
+    <meta
+    name="theme-color" content='#ffffff'/> <!-- Ссылка на сайт -->
+    <meta name="description" content="Изображения и иконки"/>
+    <meta name="keywords" content="web, front-end, css, html, js"/>
+    <meta name="Author" content="Mykola Chornyi"/>
+    <meta name="Copyright" content="Mykola Chornyi"/>
+    <meta name="Address" content="Ukraine, Kyiv"/>
+    <meta property="og:locale" content="ru_RU"/>
+    <meta property="og:title" content="Mykola Chornyi - Frontend Developer"/>
+    <meta
+      property="og:description"
+      content="I am Frontend developer with more than a year of practice in the
+        development of SPA using React, Redux, TypeScript and Webpack."/>
+    <meta property="og:title" content="Mykola Chornyi - Изображения и иконки"/>
+    <meta property="og:description" content=" Изображения и иконки"/>
+    <meta
+    property="og:image" content="https://grafit-off.github.io/grafit-off/site/assets/img/blog-post/3.jpg"/> <!-- Favicons -->
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="../../assets/resources/favicons/apple-icon-57x57.png">
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="../../assets/resources/favicons/apple-icon-60x60.png">
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="../../assets/resources/favicons/apple-icon-72x72.png">
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="../../assets/resources/favicons/apple-icon-76x76.png">
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="../../assets/resources/favicons/apple-icon-114x114.png">
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="../../assets/resources/favicons/apple-icon-120x120.png">
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="../../assets/resources/favicons/apple-icon-144x144.png">
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="../../assets/resources/favicons/apple-icon-152x152.png">
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../../assets/resources/favicons/apple-icon-180x180.png">
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="../../assets/resources/favicons/android-icon-192x192.png">
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../../assets/resources/favicons/favicon-32x32.png">
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="../../assets/resources/favicons/favicon-96x96.png">
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../../assets/resources/favicons/favicon-16x16.png">
+    <link rel="manifest" href="../../assets/resources/favicons/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta
+      name="msapplication-TileImage"
+      content="../../assets/resources/favicons/ms-icon-144x144.png">
+    <link
+      rel="preload"
+      href="../../assets/fonts/FuturaPT-Bold.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin/>
+    <link
+      rel="preload"
+      href="../../assets/fonts/FuturaPT-Book.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin/>
+    <link
+      rel="preload"
+      href="../../assets/fonts/FuturaPT-Medium.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin/>
+    <link rel="stylesheet" href="../../assets/css/paper.min.css"/>
+    <title>Mykola Chornyi - Изображения и иконки</title>
+  </head>
+  <body class="body">
+    <div class="wrap">
+      <header class="header fixed-padding" id="header">
+  <div class="header__container container">
+    <a
+      href="https://github.com/grafit-off"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="header__github link-reset">
+      <span>g</span>
+      <span>i</span>
+      <span>t</span>
+      <span>h</span>
+      <span>u</span>
+      <span>b</span>
+    </a>
+    <button
+      class="header__burger burger btn-reset"
+      title="Navigation list"
+      aria-label="Open">
+      <span class="burger__line"></span>
+    </button>
+    <nav class="header__nav nav">
+      <div class="nav__wrap">
+        <ul class="nav__list list-reset">
+          <li class="nav__item">
+            <a
+              href="https://grafit-off.github.io/grafit-off/site/"
+              class="nav__link  link-reset">Home</a>
+          </li>
+          <li class="nav__item">
+            <a
+              href="https://grafit-off.github.io/grafit-off/site/portfolio/"
+              class="nav__link  link-reset">Portfolio</a>
+          </li>
+          <li class="nav__item">
+            <a
+              href="https://grafit-off.github.io/grafit-off/site/summary/"
+              class="nav__link  link-reset">CV</a>
+          </li>
+          
+        </ul>
+        <ul class="nav__social social list-reset">
+          <li class="social__item">
+            <a
+              href="tg://resolve?domain=ncl_ch"
+              class="social__link link-reset"
+              title="Telegram"
+              aria-label="Visit telegram"
+              target="_blank"
+              rel="noopener noreferrer">
+              <svg class="social__svg social__svg--tg">
+                <use xlink:href="https://grafit-off.github.io/grafit-off/site/assets/img/sprite.svg#tg-min"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a
+              href="viber://add?number=380981078738"
+              class="social__link link-reset"
+              title="Viber"
+              aria-label="Open viber"
+              target="_blank"
+              rel="noopener noreferrer">
+              <svg class="social__svg">
+                <use xlink:href="https://grafit-off.github.io/grafit-off/site/assets/img/sprite.svg#viber-min"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <span class="nav__overlay" title="Close navigation list"></span>
+    </nav>
+    <div class="header__block">
+      <ul class="header__social social list-reset">
+        <li class="social__item">
+          <a
+            href="tg://resolve?domain=ncl_ch"
+            class="social__link link-reset"
+            title="Telegram"
+            aria-label="Visit telegram"
+            target="_blank"
+            rel="noopener noreferrer">
+            <svg class="social__svg social__svg--tg">
+              <use xlink:href="https://grafit-off.github.io/grafit-off/site/assets/img/sprite.svg#tg-min"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social__item">
+          <a
+            href="viber://add?number=380981078738"
+            class="social__link link-reset"
+            title="Viber"
+            aria-label="Open viber"
+            target="_blank"
+            rel="noopener noreferrer">
+            <svg class="social__svg">
+              <use xlink:href="https://grafit-off.github.io/grafit-off/site/assets/img/sprite.svg#viber-min"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+      <button
+        class="header__theme-switcher btn-reset"
+        type="button"
+        title="Change theme"
+        aria-label="Change theme">
+        <svg>
+          <use xlink:href="https://grafit-off.github.io/grafit-off/site/assets/img/sprite.svg#theme-switcher"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
 </header>
-		<main class="main-content">
-			<section class="paper">
-				<div class="paper__container container">
-					<article class="paper__article article">
-						<div class="article__promo">
-							<div class="article__image">
-								<img src="https://grafit-off.github.io/grafit-off/site/assets/img/blog-post/3.jpg" alt="Обложка статьи" class="article__img" loading="lazy">
-							</div>
-							<div class="article__info">
-								<div class="article__time-info">
-									<svg class="article__time-svg">
-										<use xlink:href="../../assets/img/sprite.svg#clock"></use>
-									</svg>
-									<time class="article__time text-reset" datetime="2021-10-29 23:03">
-										9 ноября 2021
-									</time>
-								</div>
-								<h1 class="article__title text-reset">
-									Изображения и иконки
-								</h1>
-							</div>
-							<span class="article__tag">
-								Полезное
-							</span>
-						</div>
-						<div class="article__content">
-							<p>Работа верстальщика непосредственно связана с использованием графики разного типа. Зачастую все иконки и изображения передает верстальщику дизайнер, но, иногда, это не то что нам нужно. По этому я собрал несколько ресурсов которые помогут сделать ваш сайт красивее и лучше.</p>
+      <main class="main-content">
+        <section class="paper">
+          <div class="paper__container container">
+            <article class="paper__article article">
+              <div class="article__promo">
+                <div class="article__image">
+                  <img src="https://grafit-off.github.io/grafit-off/site/assets/img/blog-post/3.jpg" alt="Обложка статьи" class="article__img" loading="lazy">
+                </div>
+                <div class="article__info">
+                  <div class="article__time-info">
+                    <svg class="article__time-svg">
+                      <use xlink:href="../../assets/img/sprite.svg#clock"></use>
+                    </svg>
+                    <time class="article__time text-reset" datetime="2021-11-09 22:20">
+                      9 ноября 2021
+                    </time>
+                  </div>
+                  <h1 class="article__title text-reset">
+                    Изображения и иконки
+                  </h1>
+                </div>
+                <span class="article__tag">
+                  Полезное
+                </span>
+              </div>
+              <div class="article__content">
+                <p>Работа верстальщика непосредственно связана с использованием графики разного типа. Зачастую все иконки и изображения передает верстальщику дизайнер, но, иногда, это не то что нам нужно. По этому я собрал несколько ресурсов которые помогут сделать ваш сайт красивее и лучше.</p>
 <h4><a href="https://www.flaticon.com/">Flaticon</a></h4>
 <p>Большое количество иконок разных форматов. Но для svg нужна премиум подписка.</p>
 <h4><a href="https://fontawesome.com/">Font Awesome</a></h4>
@@ -179,151 +264,146 @@
 <p>Иногда мы находим нужную иконку на каком-либо сайте и просто копируем svg код для использования. С помощью URL-encoder мы можем вставлять svg код прям в background url, этот небольшой сервис позволяет экономить время и не плодить большое количество svg изображений в папках!</p>
 <p>Конечно ресурсов по изображениям намного больше, чем указано в этой статье. Но я выбрал самые удобные, простые и полезные, по своему мнению. Удачи в начинаниях и верстке!</p>
 
-						</div>
-					</article>
-					<aside class="paper__aside aside">
-						<div class="aside__content">
-							<h2 class="aside__title text-reset">
-								Последние статьи:
-							</h2>
-							<ul class="aside__list list-reset">
-								
-									
-										
-												<li class="aside__item aside-item">
-													<div class="aside-item__article">
-														<div class="aside-item__image">
-															<img src="https://grafit-off.github.io/grafit-off/site/assets/img/blog-post/4.jpg" alt="Обложка статьи" class="aside-item__img"  loading="lazy">
-														</div>
-														<div class="aside-item__info">
-															<div class="aside-item__time-info">
-																<time class="aside-item__time text-reset" datetime="2021-11-25 01:20">
-																	25 ноября 2021
-																</time>
-																<svg class="aside-item__time-svg">
-																	<use xlink:href="../../assets/img/sprite.svg#clock"></use>
-																</svg>
-															</div>
-															<h3 class="aside-item__title text-reset">
-																Привет React!
-															</h3>
-														</div>
-														<span class="aside-item__tag">
-															Разное
-														</span>
-														<a href="https://grafit-off.github.io/grafit-off/site/blog/post-4/" class="aside-item__link link-reset" aria-label="Перейти к статье"></a>
-													</div>
-												</li>
-										
-										
-									
-								
-									
-										
-										
-									
-								
-									
-										
-												<li class="aside__item aside-item">
-													<div class="aside-item__article">
-														<div class="aside-item__image">
-															<img src="https://grafit-off.github.io/grafit-off/site/assets/img/blog-post/2.jpg" alt="Обложка статьи" class="aside-item__img"  loading="lazy">
-														</div>
-														<div class="aside-item__info">
-															<div class="aside-item__time-info">
-																<time class="aside-item__time text-reset" datetime="2021-11-09 22:00">
-																	9 ноября 2021
-																</time>
-																<svg class="aside-item__time-svg">
-																	<use xlink:href="../../assets/img/sprite.svg#clock"></use>
-																</svg>
-															</div>
-															<h3 class="aside-item__title text-reset">
-																Какой графический-редактор выбрать верстальщику?
-															</h3>
-														</div>
-														<span class="aside-item__tag">
-															Полезное
-														</span>
-														<a href="https://grafit-off.github.io/grafit-off/site/blog/post-2/" class="aside-item__link link-reset" aria-label="Перейти к статье"></a>
-													</div>
-												</li>
-										
-										
-									
-								
-									
-										
-												<li class="aside__item aside-item">
-													<div class="aside-item__article">
-														<div class="aside-item__image">
-															<img src="https://grafit-off.github.io/grafit-off/site/assets/img/blog-post/1.jpg" alt="Обложка статьи" class="aside-item__img"  loading="lazy">
-														</div>
-														<div class="aside-item__info">
-															<div class="aside-item__time-info">
-																<time class="aside-item__time text-reset" datetime="2021-11-09 14:00">
-																	9 ноября 2021
-																</time>
-																<svg class="aside-item__time-svg">
-																	<use xlink:href="../../assets/img/sprite.svg#clock"></use>
-																</svg>
-															</div>
-															<h3 class="aside-item__title text-reset">
-																Сайт в продакшн!
-															</h3>
-														</div>
-														<span class="aside-item__tag">
-															Разное
-														</span>
-														<a href="https://grafit-off.github.io/grafit-off/site/blog/post-1/" class="aside-item__link link-reset" aria-label="Перейти к статье"></a>
-													</div>
-												</li>
-										
-										
-									
-								
-							</ul>
-						</div>
-					</aside>
-					<div class="paper__author author-info">
-						<div class="author-info__image">
-							<svg class="author-info__svg">
-								<use xlink:href="../../assets/img/sprite.svg#G-min"></use>
-							</svg>
-						</div>
-						<div class="author-info__content">
-							<h2 class="author-info__heading text-reset">
-								Об авторе
-							</h2>
-							<div class="author-info__name">
-								Николай Чёрный
-							</div>
-							<p class="author-info__text text-reset">
-								Привет! Я верстальщик, который специализируется на создании веб-сайтов разной сложности с использованием
-								семантической и доступной разметки придерживаясь рекомендаций W3C и WAI-ARIA.
-								Имею некоммерческий опыт разработки адаптивно-отзывчивых web-сайтов и готов выполнить ваш заказ в
-								кратчайшие
-								сроки с максимальным качеством!
-							</p>
-							<p class="author-info__text text-reset">
-								Связатья со мной можно по ссылкам соц. сетей в навигации!
-							</p>
-						</div>
-					</div>
-				</div>
-			</section>
-		</main>
-		<footer class="footer section">
-	<div class="footer__container container">
-		<strong class="footer__strong  text-reset">
-			GRAFIT-OFF, 2021
-		</strong>
-	</div>
+              </div>
+            </article>
+            <aside class="paper__aside aside">
+              <div class="aside__content">
+                <h2 class="aside__title text-reset">
+                  Latest articles:
+                </h2>
+                <ul class="aside__list list-reset">
+                  
+                    
+                      
+                        <li class="aside__item aside-item">
+                          <div class="aside-item__article">
+                            <div class="aside-item__image">
+                              <img src="https://grafit-off.github.io/grafit-off/site/assets/img/blog-post/4.jpg" alt="Обложка статьи" class="aside-item__img" loading="lazy">
+                            </div>
+                            <div class="aside-item__info">
+                              <div class="aside-item__time-info">
+                                <time class="aside-item__time text-reset" datetime="2021-11-25 01:20">
+                                  25 ноября 2021
+                                </time>
+                                <svg class="aside-item__time-svg">
+                                  <use xlink:href="../../assets/img/sprite.svg#clock"></use>
+                                </svg>
+                              </div>
+                              <h3 class="aside-item__title text-reset">
+                                Привет React!
+                              </h3>
+                            </div>
+                            <span class="aside-item__tag">
+                              Разное
+                            </span>
+                            <a href="https://grafit-off.github.io/grafit-off/site/blog/post-4/" class="aside-item__link link-reset" aria-label="Read more"></a>
+                          </div>
+                        </li>
+                      
+                      
+                    
+                  
+                    
+                      
+                      
+                    
+                  
+                    
+                      
+                        <li class="aside__item aside-item">
+                          <div class="aside-item__article">
+                            <div class="aside-item__image">
+                              <img src="https://grafit-off.github.io/grafit-off/site/assets/img/blog-post/2.jpg" alt="Обложка статьи" class="aside-item__img" loading="lazy">
+                            </div>
+                            <div class="aside-item__info">
+                              <div class="aside-item__time-info">
+                                <time class="aside-item__time text-reset" datetime="2021-11-09 22:00">
+                                  9 ноября 2021
+                                </time>
+                                <svg class="aside-item__time-svg">
+                                  <use xlink:href="../../assets/img/sprite.svg#clock"></use>
+                                </svg>
+                              </div>
+                              <h3 class="aside-item__title text-reset">
+                                Какой графический-редактор выбрать верстальщику?
+                              </h3>
+                            </div>
+                            <span class="aside-item__tag">
+                              Полезное
+                            </span>
+                            <a href="https://grafit-off.github.io/grafit-off/site/blog/post-2/" class="aside-item__link link-reset" aria-label="Read more"></a>
+                          </div>
+                        </li>
+                      
+                      
+                    
+                  
+                    
+                      
+                        <li class="aside__item aside-item">
+                          <div class="aside-item__article">
+                            <div class="aside-item__image">
+                              <img src="https://grafit-off.github.io/grafit-off/site/assets/img/blog-post/1.jpg" alt="Обложка статьи" class="aside-item__img" loading="lazy">
+                            </div>
+                            <div class="aside-item__info">
+                              <div class="aside-item__time-info">
+                                <time class="aside-item__time text-reset" datetime="2022-06-09 14:00">
+                                  June 9, 2022
+                                </time>
+                                <svg class="aside-item__time-svg">
+                                  <use xlink:href="../../assets/img/sprite.svg#clock"></use>
+                                </svg>
+                              </div>
+                              <h3 class="aside-item__title text-reset">
+                                Site in production!
+                              </h3>
+                            </div>
+                            <span class="aside-item__tag">
+                              Sundry
+                            </span>
+                            <a href="https://grafit-off.github.io/grafit-off/site/blog/post-1/" class="aside-item__link link-reset" aria-label="Read more"></a>
+                          </div>
+                        </li>
+                      
+                      
+                    
+                  
+                </ul>
+              </div>
+            </aside>
+            <div class="paper__author author-info">
+              <div class="author-info__image">
+                <svg class="author-info__svg">
+                  <use xlink:href="../../assets/img/sprite.svg#G-min"></use>
+                </svg>
+              </div>
+              <div class="author-info__content">
+                <h2 class="author-info__heading text-reset">
+                  About me
+                </h2>
+                <div class="author-info__name">
+                  Mykola Chornyi
+                </div>
+                <p class="author-info__text text-reset">
+                  Hi! I'm a Front-End Developer, strive to constantly improve myself, and create
+                  flexible, fast and semantic websites with great looks. I love to learn, and my
+                  experience has taught me only one thing, practice is the place you learn the
+                  most.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer section">
+  <div class="footer__container container">
+    <small class="footer__strong  text-reset" style="border-top: 0;">
+      Mykola Chornyi, 2022
+    </small>
+  </div>
 </footer>
-	</div>	
-	<script src="../../assets/js/main.js"></script>
-	
-</body>
-
+    </div>
+    <script src="../../assets/js/main.js"></script>
+    
+  </body>
 </html>
